@@ -1,0 +1,60 @@
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 62.5%;
+    font-weight: 300;
+    font-style: normal;
+}
+
+main{
+    background-color: #f7f7f7;
+    max-width: 900px;
+    display: grid;
+    grid-template-areas:
+    "destaque ad"
+    "destaque videos-sugeridos";
+    grid-template-columns: 1fr 270PX;
+    grid-template-rows: 56px 1fr;
+    gap: 20px;
+    padding: 35px 35px 0 ;
+}
+
+.video-destaque{
+    grid-area: destaque;
+}
+
+.video-destaque .info-video-destaque h1{
+    font-size: 1.8rem;
+    margin: 12px 0 7px;
+}
+
+.video-destaque .info-video-destaque .visualizacoes-video-destaque{
+    font-size: 1.4rem;
+}
+
+.video-destaque .info-video-destaque .info-destaque{
+    font-size: 1.6rem;
+    margin: 9px 0 19px;
+}
+.ad{
+    grid-area: ad;
+}
+
+.videos-sugeridos{
+    grid-area: videos-sugeridos;
+}
+
+.videos-sugeridos .video{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.videos-sugeridos .video h4{
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.videos-sugeridos .video p{
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
